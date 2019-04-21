@@ -1,0 +1,7 @@
+{
+  "name": "ionichomework",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

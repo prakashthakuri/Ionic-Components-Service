@@ -1,0 +1,108 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding >
+
+<br/>
+   <ion-input type="text" value=""  [(ngModel)]="name" placeholder="Enter Your Name" fill></ion-input>
+<br/>
+<ion-button expand="block" (click)="openModal()" >Log in!</ion-button>
+
+<ion-label padding >
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime display-format="MM/YYYY" picker-format="MMMM YYYY"></ion-datetime>
+  </ion-item>
+
+</ion-label>
+
+  <ion-icon name="home" size="large"></ion-icon>
+    <ion-icon name="logo-facebook" size="large" ></ion-icon>
+  <ion-icon name="logo-twitter" size="large"></ion-icon>
+    <ion-icon name="logo-linkedin" size="large"></ion-icon>
+  <ion-icon name="logo-skype" size="large"></ion-icon>
+  <ion-icon name="mail" size="large"></ion-icon>
+
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Pokhara</ion-card-title>
+    <ion-card-subtitle>A mirror to the Himalaya</ion-card-subtitle>
+<br/>
+    <ion-img (click)="openActionSheet()" src="assets/pokhara.jpg"></ion-img>
+      </ion-card-header>
+
+  <ion-card-content>
+  Pokhara is a city on Phewa Lake, in central Nepal. It is known as a gateway to the Annapurna Circuit, a popular trail in the Himalayas.
+  There are many activities to do in the city like, short hike to Sarangkot is highly recommended, which offers the magnificent sight of the sunset, sunrise, and of the whole city beneath. Davis Waterfall, a sublime waterfall in the city is another excursion not to be missed.
+  </ion-card-content>
+</ion-card>
+
+<ion-label>
+<h1>Things to do in Pokhara!!</h1>
+<h3>Slides</h3>
+</ion-label>
+
+<br/>
+<ion-slides>
+      <ion-slide>
+      <ion-label>
+        <ion-img src="assets/fewa.jpg"></ion-img>
+<h1>Boating in Phewa Lake</h1>
+ </ion-label>
+      </ion-slide>
+
+      <ion-slide>
+      <ion-label>
+
+                      <ion-img src="assets/peacestupa.jpg"></ion-img>
+                      <h1>Enjoy the view from the Peace Stupa</h1>
+</ion-label>
+
+
+      </ion-slide>
+             <ion-slide>
+             <ion-label>
+               <ion-img src="assets/rafting.jpg"></ion-img>
+               <h1>Feel the adrenaline rush of white water rafting</h1>
+
+</ion-label>
+
+                        </ion-slide>
+
+                        <ion-slide>
+                        <ion-label>
+
+
+                        <ion-img src="assets/chamero.jpg"></ion-img>
+                        <h1>Come up close with Bats at Bat Cave</h1>
+</ion-label>
+
+
+</ion-slide>
+
+             <ion-slide>
+             <ion-label>
+
+                                     <ion-img src="assets/p_50.jpg"></ion-img>
+
+                                  <h1>Enjoy the view of Pokhara city from the sky</h1>
+</ion-label>
+
+
+</ion-slide>
+
+                      </ion-slides>
+
+
+
+<br/>
+<br/>
+
+
+</ion-content>
